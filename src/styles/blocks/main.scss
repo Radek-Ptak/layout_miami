@@ -1,0 +1,16 @@
+.main {
+  box-sizing: border-box;
+  padding: 60px 20px;
+  background-color: #1d1d1d;
+  justify-self: start;
+  width: 100%;
+
+  &__paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #fff;
+  }
+}

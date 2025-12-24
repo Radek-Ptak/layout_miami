@@ -1,0 +1,16 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  &--compare-bikes {
+    @media (min-width: 744px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &--details {
+    @media (min-width: 744px) {
+    }
+  }
+}

@@ -1,7 +1,13 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@import './blocks/title';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/section';
+@import './blocks/product';
+@import './blocks/details';
+@import './blocks/button';
 
-body {
-  background: $c-gray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
