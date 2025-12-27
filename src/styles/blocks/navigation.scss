@@ -4,4 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
