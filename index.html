@@ -31,8 +31,80 @@
   </head>
   <body>
     <header class="header">
+      <nav class="navigation">
+        <a
+          class="navigation__item"
+          href="#"
+        >
+          <img
+            src="src/images/logo.svg"
+            alt="Logo"
+          />
+        </a>
+        <a
+          class="navigation__item"
+          href="#"
+        >
+          <img
+            src="src/images/phone.svg"
+            alt="Phone"
+          />
+        </a>
+        <a
+          class="navigation__item"
+          href="#"
+        >
+          <img
+            src="src/images/menu.svg"
+            alt="Menu"
+          />
+        </a>
+      </nav>
       <h1 class="title">Take the Streets</h1>
     </header>
+    <div class="menu">
+      <nav class="navigation">
+        <a
+          class="navigation__item"
+          href="#"
+        >
+          <img
+            src="src/images/logo-dark.svg"
+            alt="Logo-Dark"
+          />
+        </a>
+        <a
+          class="navigation__item"
+          href="#"
+        >
+          <img
+            src="src/images/close.svg"
+            alt="Close"
+          />
+        </a>
+      </nav>
+      <nav class="navigation--menu">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Compare Bikes</a>
+          </li>
+          <li>
+            <a href="#">Details</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <p>+1 234 5555-55-55</p>
+      <a href="#">Book a test ride</a>
+    </div>
     <main class="main">
       <h2 class="title title--secondary">Move Free</h2>
       <p class="main__paragraph">
@@ -41,51 +113,53 @@
       </p>
       <section class="section section--compare-bikes">
         <h3 class="title title--section">Compare bikes</h3>
-        <article class="product">
-          <div class="product__picture">
-            <img
-              src="src/images/Sporty-4.jpg"
-              class="product__image"
-              alt="Sporty-4"
-            />
-          </div>
-          <h4 class="title title--article">Sporty 4</h4>
-          <p class="product__paragraph">
-            The iconic frame brought to a new performance height as a sporty,
-            active ride.
-          </p>
-          <span class="product__price">$ 2 590</span>
-        </article>
-        <article class="product">
-          <div class="product__picture">
-            <img
-              src="src/images/Ride-in-town-ST.jpg"
-              class="product__image"
-              alt="Ride-in-town-ST"
-            />
-          </div>
-          <h4 class="title title--article">Ride in town ST</h4>
-          <p class="product__paragraph">
-            An open frame for an upright riding position as the most comfortable
-            ride in town.
-          </p>
-          <span class="product__price">$ 2 590</span>
-        </article>
-        <article class="product">
-          <div class="product__picture">
-            <img
-              src="src/images/Agile-ride-3.jpg"
-              class="product__image"
-              alt="Agile-ride-3"
-            />
-          </div>
-          <h4 class="title title--article">Agile ride 3</h4>
-          <p class="product__paragraph">
-            The lightweight frame that has earned its street tread as a sleek,
-            agile ride.
-          </p>
-          <span class="product__price">$ 2 090</span>
-        </article>
+        <div class="section__products">
+          <article class="product">
+            <div class="product__picture">
+              <img
+                src="src/images/Sporty-4.jpg"
+                class="product__image"
+                alt="Sporty-4"
+              />
+            </div>
+            <h4 class="title title--article">Sporty 4</h4>
+            <p class="product__paragraph">
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+            <span class="product__price">$ 2 590</span>
+          </article>
+          <article class="product">
+            <div class="product__picture">
+              <img
+                src="src/images/Ride-in-town-ST.jpg"
+                class="product__image"
+                alt="Ride-in-town-ST"
+              />
+            </div>
+            <h4 class="title title--article">Ride in town ST</h4>
+            <p class="product__paragraph">
+              An open frame for an upright riding position as the most
+              comfortable ride in town.
+            </p>
+            <span class="product__price">$ 2 590</span>
+          </article>
+          <article class="product">
+            <div class="product__picture">
+              <img
+                src="src/images/Agile-ride-3.jpg"
+                class="product__image"
+                alt="Agile-ride-3"
+              />
+            </div>
+            <h4 class="title title--article">Agile ride 3</h4>
+            <p class="product__paragraph">
+              The lightweight frame that has earned its street tread as a sleek,
+              agile ride.
+            </p>
+            <span class="product__price">$ 2 090</span>
+          </article>
+        </div>
       </section>
       <section class="section section--details">
         <h3 class="title title--section">The details</h3>
@@ -160,7 +234,62 @@
       </section>
       <section class="section section--contact-us">
         <h3 class="title title--section">Contact us</h3>
+        <form class="form">
+          <div class="form__item">
+            <label
+              for="name"
+              class="form__label"
+            >
+              Name
+            </label>
+            <input
+              id="name"
+              class="form__input"
+              type="text"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form__item">
+            <label
+              for="email"
+              class="form__label"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              class="form__input"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form__item">
+            <label
+              for="message"
+              class="form__label"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              class="form__textarea"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="button button--primary">Send</button>
+        </form>
+        <address class="address">
+          <h4 class="address__label">Phone</h4>
+          <p class="address__content">+1 234 5555-55-55</p>
+          <h4 class="address__label">Email</h4>
+          <p class="address__content">hello@miami.com</p>
+          <h4 class="address__label">Address</h4>
+          <p class="address__content">
+            400 first ave.suite 700Minneapolis, MN 55401
+          </p>
+        </address>
       </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>

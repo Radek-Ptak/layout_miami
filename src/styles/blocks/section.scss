@@ -1,11 +1,22 @@
 .section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  padding-top: 92px;
+  width: 100%;
+  align-items: center;
 
-  &--compare-bikes {
-    @media (min-width: 744px) {
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @media (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
+  }
+
+  &--contact-us {
+    padding-top: 80px;
   }
 }
