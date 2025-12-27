@@ -30,7 +30,10 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header
+      class="header"
+      id="home"
+    >
       <nav class="navigation">
         <a
           class="navigation__item"
@@ -42,7 +45,7 @@
           />
         </a>
         <a
-          class="navigation__item"
+          class="navigation__item navigation--phone"
           href="#"
         >
           <img
@@ -52,7 +55,7 @@
         </a>
         <a
           class="navigation__item"
-          href="#"
+          href="#menu"
         >
           <img
             src="src/images/menu.svg"
@@ -62,7 +65,10 @@
       </nav>
       <h1 class="title">Take the Streets</h1>
     </header>
-    <div class="menu">
+    <div
+      class="menu"
+      id="menu"
+    >
       <nav class="navigation">
         <a
           class="navigation__item"
@@ -75,7 +81,7 @@
         </a>
         <a
           class="navigation__item"
-          href="#"
+          href="#home"
         >
           <img
             src="src/images/close.svg"
@@ -83,35 +89,73 @@
           />
         </a>
       </nav>
-      <nav class="navigation--menu">
-        <ul>
-          <li>
-            <a href="#">Home</a>
+      <nav class="links menu__links">
+        <ul class="links__list">
+          <li class="links__item">
+            <a
+              href="#home"
+              class="links__link"
+            >
+              Home
+            </a>
           </li>
-          <li>
-            <a href="#">About Us</a>
+          <li class="links__item">
+            <a
+              href="#about-us"
+              class="links__link"
+            >
+              About Us
+            </a>
           </li>
-          <li>
-            <a href="#">Compare Bikes</a>
+          <li class="links__item">
+            <a
+              href="#compare-bikes"
+              class="links__link"
+            >
+              Compare Bikes
+            </a>
           </li>
-          <li>
-            <a href="#">Details</a>
+          <li class="links__item">
+            <a
+              href="#details"
+              class="links__link"
+            >
+              Details
+            </a>
           </li>
-          <li>
-            <a href="#">Contacts</a>
+          <li class="links__item">
+            <a
+              href="#contacts"
+              class="links__link"
+            >
+              Contacts
+            </a>
           </li>
         </ul>
       </nav>
-      <p>+1 234 5555-55-55</p>
-      <a href="#">Book a test ride</a>
+      <p class="menu__paragraph">+1 234 5555-55-55</p>
+      <p class="menu__paragraph">
+        <a
+          href=""
+          class="menu__call"
+        >
+          Book a test ride
+        </a>
+      </p>
     </div>
-    <main class="main">
-      <h2 class="title title--secondary">Move Free</h2>
+    <main
+      class="main"
+      id="about-us"
+    >
+      <h2 class="title title--secondary main__title">Move Free</h2>
       <p class="main__paragraph">
         Shift your ride, not gears. Find the fastest way to move in the city as
         the bike adapts intuitively to power the speed you need.
       </p>
-      <section class="section section--compare-bikes">
+      <section
+        class="section section--compare-bikes"
+        id="compare-bikes"
+      >
         <h3 class="title title--section">Compare bikes</h3>
         <div class="section__products">
           <article class="product">
@@ -122,7 +166,7 @@
                 alt="Sporty-4"
               />
             </div>
-            <h4 class="title title--article">Sporty 4</h4>
+            <h4 class="title title--article product__title">Sporty 4</h4>
             <p class="product__paragraph">
               The iconic frame brought to a new performance height as a sporty,
               active ride.
@@ -137,7 +181,7 @@
                 alt="Ride-in-town-ST"
               />
             </div>
-            <h4 class="title title--article">Ride in town ST</h4>
+            <h4 class="title title--article product__title">Ride in town ST</h4>
             <p class="product__paragraph">
               An open frame for an upright riding position as the most
               comfortable ride in town.
@@ -152,7 +196,7 @@
                 alt="Agile-ride-3"
               />
             </div>
-            <h4 class="title title--article">Agile ride 3</h4>
+            <h4 class="title title--article product__title">Agile ride 3</h4>
             <p class="product__paragraph">
               The lightweight frame that has earned its street tread as a sleek,
               agile ride.
@@ -161,7 +205,10 @@
           </article>
         </div>
       </section>
-      <section class="section section--details">
+      <section
+        class="section section--details"
+        id="details"
+      >
         <h3 class="title title--section">The details</h3>
         <article class="details">
           <div class="details__picture">
@@ -176,7 +223,7 @@
               alt="Details-2"
             />
           </div>
-          <h4 class="title title--article">Auto Unlock</h4>
+          <h4 class="title title--article details__title">Auto Unlock</h4>
           <p class="details__paragraph">
             The app senses when you're nearby to unlock automatically. GPS
             tracking so you know where your bike is and can track it anytime.
@@ -195,7 +242,9 @@
               alt="Details-4"
             />
           </div>
-          <h4 class="title title--article">Range & Integrated lights</h4>
+          <h4 class="title title--article details__title">
+            Range & Integrated lights
+          </h4>
           <p class="details__paragraph">
             The removable battery has up to 70km battery autonomy and weighs
             only 2.4 kg. Lights integrated into the frame give you always-on
@@ -215,7 +264,7 @@
               alt="Details-6"
             />
           </div>
-          <h4 class="title title--article">
+          <h4 class="title title--article details__title">
             Hydraulic disc brakes & Lightweight
           </h4>
           <p class="details__paragraph">
@@ -232,7 +281,10 @@
           Explore
         </a>
       </section>
-      <section class="section section--contact-us">
+      <section
+        class="section section--contact-us"
+        id="contacts"
+      >
         <h3 class="title title--section">Contact us</h3>
         <form class="form">
           <div class="form__item">
@@ -285,7 +337,11 @@
           <p class="address__content">hello@miami.com</p>
           <h4 class="address__label">Address</h4>
           <p class="address__content">
-            400 first ave.suite 700Minneapolis, MN 55401
+            400 first ave.
+            <br />
+            suite 700
+            <br />
+            Minneapolis, MN 55401
           </p>
         </address>
       </section>

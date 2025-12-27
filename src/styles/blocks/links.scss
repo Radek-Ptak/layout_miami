@@ -1,0 +1,30 @@
+.links {
+  margin-top: 48px;
+
+  &__list {
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    display: inline-block;
+
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+
+    &:hover {
+      border-bottom: 1px solid #1d1d1d;
+    }
+  }
+}

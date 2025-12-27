@@ -26,6 +26,7 @@
     font-weight: 700;
     font-size: 24px;
     color: #fff;
+    margin-top: 16px;
   }
 
   &__picture {
@@ -35,11 +36,16 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 32px;
 
     &:hover {
       .product__image {
         transform: scale(1.05);
       }
     }
+  }
+
+  &__title {
+    margin-bottom: 8px;
   }
 }
