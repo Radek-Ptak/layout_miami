@@ -1,19 +1,12 @@
+@use '../utils/mixins.scss' as *;
+
 .section {
-  display: grid;
-  grid-template-columns: 1fr;
   padding-top: 92px;
-  width: 100%;
-  align-items: center;
 
   &__products {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    @include grid;
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
+    gap: 40px;
   }
 
   &--contact-us {
