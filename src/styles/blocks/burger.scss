@@ -1,0 +1,35 @@
+@use '../utils/mixins.scss' as *;
+
+.burger {
+  &::before {
+    content: '';
+    background-image: url('../images/menu.svg');
+    background-size: cover;
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../images/menu-hover.svg');
+    background-size: cover;
+    display: none;
+    width: 18px;
+    height: 12px;
+  }
+
+  &:hover {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: inline-block;
+    }
+  }
+
+  &__label {
+    @include visually-hidden;
+  }
+}

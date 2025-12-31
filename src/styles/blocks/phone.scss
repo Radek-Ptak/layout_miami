@@ -1,0 +1,23 @@
+@use '../utils/mixins.scss' as *;
+
+.phone {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #fff;
+    margin-right: 20px;
+  }
+
+  &:not(:hover) &__label {
+    @include visually-hidden;
+  }
+}

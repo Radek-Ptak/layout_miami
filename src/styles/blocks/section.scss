@@ -5,8 +5,12 @@
 
   &__products {
     @include grid;
-
     gap: 40px;
+
+    @include for-desktop {
+      grid-column: 1/13;
+      gap: 24px;
+    }
   }
 
   &--contact-us {
