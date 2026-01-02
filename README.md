@@ -4,19 +4,19 @@ Project Description: MyBike is a modern, responsive landing page designed for an
 
 Technologies Used:
 
-HTML5 (Semantic structure)
+- HTML5 (Semantic structure)
 
-SCSS (Modular architecture, variables, nesting)
+- SCSS (Modular architecture, variables, nesting)
 
-JavaScript ES6+ (Interactions, mobile menu logic)
+- JavaScript ES6+ (Interactions, mobile menu logic)
 
-BEM Methodology (Clean and scalable naming convention)
+- BEM Methodology (Clean and scalable naming convention)
 
-Google Fonts (Poppins typeface)
+- Google Fonts (Poppins typeface)
 
-Vite / Parcel (Build tool)
+- Vite / Parcel (Build tool)
 
 Links:
 
-[DEMO LINK](https://<your_account>.github.io/layout_miami/)
+[DEMO LINK](https://Radek-Ptak.github.io/layout_miami/)
 [CHECKLIST](https://github.com/mate-academy/layout_miami/blob/master/checklist.md)
