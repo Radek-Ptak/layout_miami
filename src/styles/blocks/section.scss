@@ -5,6 +5,7 @@
 
   &__products {
     @include grid;
+
     gap: 40px;
 
     @include for-desktop {
