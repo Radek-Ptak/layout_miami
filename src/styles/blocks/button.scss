@@ -1,3 +1,5 @@
+@use '../utils/mixins.scss' as *;
+
 .button {
   display: block;
   box-sizing: border-box;
@@ -11,13 +13,29 @@
   letter-spacing: 0;
   color: #1d1d1d;
   background-color: #fff;
+
   border-radius: 40px;
   height: 56px;
-  transition: all 0.3s ease;
+
+  &--primary {
+    grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: 5/9;
+      max-width: 324px;
+      margin: 0 auto;
+    }
+  }
 
   &:hover {
     color: #fff;
     background-color: #748577;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 4px 16px 0px #e8e8f066;
+  }
+
+  &:active {
+    background-color: #5f6d61;
+    transform: translateY(2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
