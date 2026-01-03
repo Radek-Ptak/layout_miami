@@ -23,9 +23,15 @@
     color: #fff;
     letter-spacing: 0;
     margin-bottom: 24px;
+    text-decoration: none;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
 }

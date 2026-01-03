@@ -15,7 +15,12 @@
 
   @include grid;
 
+  row-gap: 0;
   align-content: start;
+
+  @include for-desktop {
+    padding: 0 0 113px 0;
+  }
 
   &:target {
     transform: translateX(0);

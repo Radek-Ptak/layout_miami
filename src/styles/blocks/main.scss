@@ -7,6 +7,12 @@
 
   @include grid;
 
+  row-gap: 0;
+
+  @include for-desktop {
+    padding: 120px 0 182px;
+  }
+
   &__paragraph {
     font-family: Poppins, sans-serif;
     font-weight: 500;

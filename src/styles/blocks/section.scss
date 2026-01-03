@@ -13,8 +13,23 @@
       gap: 24px;
     }
   }
+  &--compare-bikes {
+    @include for-desktop {
+      padding-top: 164px;
+    }
+  }
+
+  &--details {
+    @include for-desktop {
+      padding-top: 144px;
+    }
+  }
 
   &--contact-us {
     padding-top: 80px;
+
+    @include for-desktop {
+      padding-top: 180px;
+    }
   }
 }
