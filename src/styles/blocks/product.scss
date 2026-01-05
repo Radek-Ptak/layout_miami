@@ -11,6 +11,10 @@
     grid-column: span 4;
   }
 
+  @include for-tablet {
+    grid-column: 2 / 6;
+  }
+
   &__image {
     width: 100%;
     max-width: 100%;

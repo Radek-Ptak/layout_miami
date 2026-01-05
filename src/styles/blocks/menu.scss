@@ -19,7 +19,11 @@
   align-content: start;
 
   @include for-desktop {
-    padding: 0 0 113px;
+    padding: 0 0 203px;
+  }
+
+  @include for-tablet {
+    padding: 0 0 167px;
   }
 
   &:target {
@@ -32,6 +36,10 @@
     @include for-desktop {
       grid-column: span 12;
     }
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 
   &__links {
@@ -41,6 +49,10 @@
 
     @include for-desktop {
       grid-column: span 12;
+    }
+
+    @include for-tablet {
+      grid-column: span 6;
     }
   }
 
@@ -57,6 +69,10 @@
 
     @include for-desktop {
       grid-column: span 12;
+    }
+
+    @include for-tablet {
+      grid-column: span 6;
     }
   }
 

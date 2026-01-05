@@ -11,12 +11,20 @@
     padding-top: 36px;
   }
 
+  @include for-tablet {
+    padding-top: 36px;
+  }
+
   &__icons {
     display: flex;
     align-items: center;
     gap: 24px;
 
     @include for-desktop {
+      gap: 32px;
+    }
+
+    @include for-tablet {
       gap: 32px;
     }
   }

@@ -12,16 +12,29 @@
       grid-column: 1/13;
       gap: 24px;
     }
+
+    @include for-tablet {
+      grid-column: 1/7;
+      gap: 48px;
+    }
   }
   &--compare-bikes {
     @include for-desktop {
       padding-top: 164px;
+    }
+
+    @include for-tablet {
+      padding-top: 132px;
     }
   }
 
   &--details {
     @include for-desktop {
       padding-top: 144px;
+    }
+
+    @include for-tablet {
+      padding-top: 120px;
     }
   }
 
@@ -30,6 +43,10 @@
 
     @include for-desktop {
       padding-top: 180px;
+    }
+
+    @include for-tablet {
+      padding-top: 120px;
     }
   }
 }

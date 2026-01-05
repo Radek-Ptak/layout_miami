@@ -25,6 +25,12 @@
       max-width: 324px;
       margin: 0 auto;
     }
+
+    @include for-tablet {
+      grid-column: 2/6;
+      max-width: 392px;
+      margin: 0 auto;
+    }
   }
 
   &:hover {
