@@ -16,7 +16,8 @@ Technologies Used:
 
 - Vite / Parcel (Build tool)
 
+Note: Background image for desktop view (above 1260px) was changed for better visual consistency.
+
 Links:
 
 [DEMO LINK](https://Radek-Ptak.github.io/layout_miami/)
-

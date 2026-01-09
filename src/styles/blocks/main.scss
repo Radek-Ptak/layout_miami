@@ -10,11 +10,11 @@
   row-gap: 0;
 
   @include for-desktop {
-    padding: 120px 0 182px;
+    padding: 120px 120px 182px;
   }
 
   @include for-tablet {
-    padding: 120px 0;
+    padding: 120px 72px;
   }
 
   &__paragraph {

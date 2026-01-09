@@ -20,13 +20,13 @@
     background-image: url('../images/header-background-desktop.jpg');
     background-size: cover;
     background-position: center;
-    padding: 0 0 203px;
+    padding: 0 120px 203px;
     height: 630px;
   }
 
   @include for-tablet {
     background-position: center;
-    padding: 0 0 130px;
+    padding: 0 32px 130px;
     height: 628px;
   }
 
