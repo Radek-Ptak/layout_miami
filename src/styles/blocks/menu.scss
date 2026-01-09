@@ -20,11 +20,11 @@
   align-content: start;
 
   @include for-desktop {
-    padding: 0 0 203px;
+    padding: 0 120px 203px;
   }
 
   @include for-tablet {
-    padding: 0 0 167px;
+    padding: 0 72px 167px;
   }
 
   &:target {
