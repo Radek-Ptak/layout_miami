@@ -16,3 +16,12 @@ if (form) {
     form.reset();
   });
 }
+
+const burger = document.querySelector('.burger');
+
+if (burger) {
+  burger.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.hash = 'menu';
+  });
+}
