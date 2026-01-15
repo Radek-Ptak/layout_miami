@@ -18,6 +18,11 @@
       gap: 48px;
     }
   }
+
+  &--about-us {
+    padding-top: 0;
+  }
+
   &--compare-bikes {
     @include for-desktop {
       padding-top: 164px;
