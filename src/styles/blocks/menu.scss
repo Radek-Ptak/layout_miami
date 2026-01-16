@@ -27,7 +27,7 @@
     padding: 0 72px 167px;
   }
 
-  &:target {
+  .page__body--with-menu & {
     transform: translateX(0);
   }
 
