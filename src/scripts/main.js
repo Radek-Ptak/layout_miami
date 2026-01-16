@@ -22,8 +22,20 @@ if (closeBtn) {
 }
 
 menuLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    body.classList.remove('page__body--with-menu');
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    if (targetSection) {
+      event.preventDefault();
+
+      body.classList.remove('page__body--with-menu');
+
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   });
 });
 
