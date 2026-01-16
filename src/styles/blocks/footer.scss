@@ -1,6 +1,9 @@
 @use '../utils/mixins.scss' as *;
 
 .footer {
+  min-width: 320px;
+  width: 100%;
+
   background-image: url('/src/images/footer-img.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
