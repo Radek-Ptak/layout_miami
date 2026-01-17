@@ -3,9 +3,15 @@
 const body = document.body;
 const burger = document.querySelector('.burger');
 const closeBtn = document.querySelector('.close');
-const menuLinks = document.querySelectorAll('.links__link');
+const smoothLinks = document.querySelectorAll(
+  '.links__link, .button--primary, .footer__link',
+);
 const form = document.querySelector('.form');
 const backToTop = document.querySelector('.back');
+const footer = document.querySelector('.footer');
+const footerNav = document.querySelector('.footer__nav');
+
+let isFooterVisible = false;
 
 if (burger) {
   burger.addEventListener('click', (event) => {
@@ -21,20 +27,19 @@ if (closeBtn) {
   });
 }
 
-menuLinks.forEach((link) => {
+smoothLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     const targetId = link.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      event.preventDefault();
-
-      body.classList.remove('page__body--with-menu');
-
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+    if (targetId && targetId.startsWith('#')) {
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        event.preventDefault();
+        body.classList.remove('page__body--with-menu');
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     }
   });
 });
@@ -46,6 +51,16 @@ if (form) {
   });
 }
 
+const handleBackToTopVisibility = () => {
+  if (!backToTop) return;
+
+  if (window.scrollY > 400 && !isFooterVisible) {
+    backToTop.classList.add('back--visible');
+  } else {
+    backToTop.classList.remove('back--visible');
+  }
+};
+
 if (backToTop) {
   backToTop.addEventListener('click', (event) => {
     event.preventDefault();
@@ -54,12 +69,26 @@ if (backToTop) {
       behavior: 'smooth',
     });
   });
+  window.addEventListener('scroll', handleBackToTopVisibility);
+}
+if (footer && footerNav) {
+  const footerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        isFooterVisible = entry.isIntersecting;
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      backToTop.classList.add('back--visible');
-    } else {
-      backToTop.classList.remove('back--visible');
-    }
-  });
+        if (entry.isIntersecting) {
+          footerNav.classList.add('is-visible');
+        } else {
+          footerNav.classList.remove('is-visible');
+        }
+        handleBackToTopVisibility();
+      });
+    },
+    {
+      threshold: 0.1,
+    },
+  );
+
+  footerObserver.observe(footer);
 }
