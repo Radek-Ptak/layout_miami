@@ -58,8 +58,7 @@
   &__list {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     gap: 10px;
 
